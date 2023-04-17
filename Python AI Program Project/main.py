@@ -80,7 +80,7 @@ def search_wolframAlpha(query = ''):
         else:
             question = listOrDict(pod0['subpod'])
             return question.split('(')[0]
-            speak('Computation failed. Querying universal databank')
+            speak('Computation failed.')
             return search_wikipedia(question)
 
 def speak(text = ''):
